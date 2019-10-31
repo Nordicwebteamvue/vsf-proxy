@@ -1,6 +1,14 @@
-import { apiStatus } from '../../../lib/util'
 import { Router } from 'express'
 import request from 'request'
+
+export function apiStatus(res, result = 'OK', code = 200, meta = null) {
+  let apiResult = { code: code, result: result };
+  if (meta !== null) {
+    apiResult.meta = meta;
+  }
+  res.status(code).json(apiResult);
+  return result;
+}
 
 module.exports = ({ config, db }) => {
   if (!(config.extensions.proxy)) {

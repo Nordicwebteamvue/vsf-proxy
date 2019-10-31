@@ -1,6 +1,6 @@
 {
   "name": "@kodbruket/vsf-proxy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "repository": "https://github.com/kodbruket/vsf-proxy",
   "author": "Max Malm <benjick@dumfan.net>",
