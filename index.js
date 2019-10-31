@@ -15,7 +15,6 @@ module.exports = ({ config, db }) => {
     console.log('No config file found') // eslint-disable-line no-console
     return Router()
   }
-  const proxies = config.extensions.proxy.list
   const api = Router()
 
   api.all('/hook/:name', (req, res) => {
