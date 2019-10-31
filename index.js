@@ -1,7 +1,7 @@
-import { Router } from 'express'
-import request from 'request'
+const { Router } = require('express')
+const request = require('request')
 
-export function apiStatus(res, result = 'OK', code = 200, meta = null) {
+function apiStatus(res, result = 'OK', code = 200, meta = null) {
   let apiResult = { code: code, result: result };
   if (meta !== null) {
     apiResult.meta = meta;

@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "https://github.com/kodbruket/vsf-proxy",
   "author": "Max Malm <benjick@dumfan.net>",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "express": "^4.16.3",
+    "request": "^2.85.0"
+  }
 }
